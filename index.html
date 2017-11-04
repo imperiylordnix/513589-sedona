@@ -10,11 +10,96 @@
 			<ul class="cite-navigation">
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="gallery.html">Фото и видео</a></li>
-				<li><a href="cite-logo.html"><img src="http://placehold.it/150x100" alt="Логотип Седона" width="150" height="100"></a></li><!--Подумал, что логотип тоже нужно включить в навигацию. Со второй страницы сайта будет вести на первую-->
+				<li><a href="cite-logo.html"><img src="http://placehold.it/150x100" alt="Логотип Седона" width="150" height="100"></a></li>
 				<li><a href="map.html">Карта штата</a></li>
 				<li><a href="hotels.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
-  </body>
+	<main class="main-content"><!--Уникальное содержимое-->
+		<section class="promo"><!--Выбрал тег section вместо div.Можно или нет?Сказали что дивов не должно быть много-->
+			<ul class="promo-img">
+				<li><img src="http://placehold.it/150x100" alt="Welcome" width="150" height="100"></li>
+				<li><img src="http://placehold.it/150x100" alt="to the gargeous" width="150" height="100"></li>
+				<li><img src="http://placehold.it/150x100" alt="Sedona" width="150" height="100"></li>
+				<li><img src="http://placehold.it/150x100" alt="Because the Grand Canyon sucks!" width="150" height="100"></li>
+			</ul>
+		</section>
+		<article class="features"><!--Заголовок,содержание статьи-->
+			<h1 class="features-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+			<p class="features-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			<article class="features-item">
+				<section class="features-item-object">
+					<h2 class="item-object-title">Настоящий городок</h2>
+					<span class="item-object-number">№1</span>	
+					<p class="item-object-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+				</section>
+				<img src="http://placehold.it/150x100" alt="Фото дома на улице" width="150" height="100">
+			</article>
+			<section class="features-services">
+				<article class="services-item">
+					<img src="http://placehold.it/150x100" alt="Иконка дома" width="150" height="100">
+					<h2 class="services-item-title">Жилье</h2>
+					<p class="services-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+				</article>
+				<article class="features-services">
+					<img src="http://placehold.it/150x100" alt="Иконка бургера" width="150" height="100">
+					<h2 class="services-item-title">Еда</h2>
+					<p class="services-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</article>
+				<article class="features-services">
+					<img src="http://placehold.it/150x100" alt="Иконка коробки с подарком" width="150" height="100">
+					<h2 class="services-item-title">Сувениры</h2>
+					<p class="services-item-text">Не только китайского, но и местного производства!</p>
+				</article>
+			</section>
+			<article class="features-item">
+				<section class="features-item-object">
+					<h2 class="item-object-title">Там есть мост Дьявола</h2>
+					<span class="item-object-number">№2</span>	
+					<p class="item-object-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</section>
+				<img src="http://placehold.it/150x100" alt="Фото моста Дьявола" width="150" height="100">
+			</article>
+			<section class="features-services">
+				<article class="services-item-plus">
+					<h2 class="services-item-title">Небольшая площадь</h2>
+					<span class="item-object-number">№3</span>	
+					<p class="services-item-text">Все достопримечательности находятся очень близко</p>
+				</article>
+				<article class="features-services-plus">
+					<h2 class="services-item-title">Красивая дорога</h2>
+					<span class="item-object-number">№4</span>	
+					<p class="services-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</article>
+				<article class="features-services-plus">
+					<h2 class="services-item-title">Мало туристов</h2>
+					<span class="item-object-number">№5</span>	
+					<p class="services-item-text">Большинство едет в гранд каньон и толпится там</p>
+				</article>
+			</section>
+		</article>
+		<article class="order">
+			<section class="public">
+				<h2 class="public-title">Заинтересовались?</h2>
+				<p class="public-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<a href="#" class="public-button">Поиск гостиницы в Седоне</a><!--Правильно,что это будет кнопка со ссылкой?-->
+			<!-- Тут будет блок карты, скорее всего div и потом допишем форму заказа гостиницы, как я пока не знаю точно-->
+		  <footer class="main-footer">
+			<div class="main-footer-column">
+				<div class="main-footer-column-visit">
+					<p class="hashtag">#visitsedona</p>
+				</div>
+				<div class="main-footer-column-socials">
+					<a href="#" class="social-twitter"></a>
+					<a href="#" class="social-facebook"></a>
+					<a href="#" class="social-youtube"></a>
+				</div>
+				<div class="main-footer-column-copyright">
+					<p class="copyright-text">Website by</p>
+					<img src="http://placehold.it/150x100" alt="HTML Academy" width="150" height="100">
+				</div>	
+			</div>
+		</footer>
+	</body>
 </html>
