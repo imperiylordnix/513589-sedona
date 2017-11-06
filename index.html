@@ -3,19 +3,18 @@
 		<head>
 			<meta charset="utf-8">
 			<title>HTML Academy: Седона</title>
+			<link rel="stylesheet" type="text/css" href="css/style.css">
 		</head>
 	<body>
 		<header class="main-header">
 			<nav class="main-navigation">
+				<div class="logo">Лого Седона</div><!--По ТЗ логотип не является пунктом меню.Нужно размечать отдельным элементом-->
 				<ul class="site-navigation">
-					<li><span class="info">Информация</span></li>
+					<li><a class="info">Информация</a></li><!--По ТЗ не является ссылкой на главную страницу-->
 					<li><a href="index.html">Фото и видео</a></li>
 					<li><a href="index.html">Карта штата</a></li>
 					<li><a href="index.html">Гостиницы</a></li>
 				</ul>
-				<div class="logo">
-				<a href="index.html"><img src="http://placehold.it/150x100" alt="Логотип Седона" width="150" height="100"></a><!--Логотип должен размечаться отдельным элементом-->
-				</div>
 			</nav>
 		</header>
 		<main class="main-content">
@@ -33,8 +32,8 @@
 						<li><h2 class="item-object-title">Настоящий городок</h2></li>
 						<li><span class="item-object-number">№1</span></li>	
 						<li><p class="item-object-text">Седона — не аттракцион для туристов, там течет своя жизнь</p></li>						
-					</ul>
-					<img class="features-img" src="http://placehold.it/150x100" alt="Фото дома на улице" width="150" height="100">
+						</li><img class="features-img" src="http://placehold.it/150x100" alt="Фото дома на улице" width="150" height="100"></li>
+					</ul>	
 				</section>
 				<section class="features-services">
 					<section class="services-item">
@@ -53,9 +52,9 @@
 						<p class="services-item-text">Не только китайского, но и местного производства!</p></li>
 					</section>
 				</section>
-				<section class="features-item">
-					<img class="features-img" src="http://placehold.it/150x100" alt="Фото моста Дьявола" width="150" height="100">
+				<section class="features-item">	
 					<ul class="features-item-object">
+						<li><img class="features-img" src="http://placehold.it/150x100" alt="Фото моста Дьявола" width="150" height="100"></li>
 						<li><h2 class="item-object-title">Там есть мост Дьявола</h2></li>
 						<li><span class="item-object-number">№2</span></li>	
 						<li><p class="item-object-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p></li>
@@ -83,7 +82,7 @@
 				<div class="public">
 					<h2 class="public-title">Заинтересовались?</h2>
 					<p class="public-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					<a href="#" class="public-button">Поиск гостиницы в Седоне</a><!--Правильно,что это будет кнопка со ссылкой?-->
+					<a href="#" class="public-button">Поиск гостиницы в Седоне</a>
 				<!--<form></form>--> 
 				</div>
 				<div class="map">
@@ -94,16 +93,16 @@
 		<footer class="main-footer">
 			<div class="main-footer-column">
 				<div class="main-footer-column-visit">
-					<p class="hashtag">#visitsedona</p>
+					<a href="#">#visitsedona</a>
 				</div>
 				<div class="main-footer-column-socials">
-					<a href="#" class="social-twitter"></a>
-					<a href="#" class="social-facebook"></a>
-					<a href="#" class="social-youtube"></a>
+					<a href="#" class="social-twitter"></a></li>
+					<a href="#" class="social-facebook"></a></li>
+					<a href="#" class="social-youtube"></a></li>
 				</div>
 				<div class="main-footer-column-copyright">
-					<p class="copyright-text">Website by</p>
-					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy" width="150" height="100"></a>
+					<span>Website by</span>
+					<a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">Лого htmlacademy</a>
 				</div>
 			</div>
 		</footer>

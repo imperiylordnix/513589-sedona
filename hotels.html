@@ -5,19 +5,17 @@
 		<title>Отели в Седоне</title>
 	</head>
   <body>
-	<header class="main-header">
-		<nav class="main-navigation">
-			<ul class="site-navigation">
-				<li><span class="info">Информация</span></li>
-				<li><a href="index.html">Фото и видео</a></li>
-				<li><a href="index.html">Карта штата</a></li>
-				<li><a href="index.html">Гостиницы</a></li>
-			</ul>
-			<div class="logo">
-			<a href="index.html"><img class="logo-img" src="http://placehold.it/150x100" alt="Логотип Седона" width="150" height="100"></a><!--Логотип должен размечаться отдельным элементом-->
-			</div>
-		</nav>
-	</header>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<div class="logo">Лого Седона</div><!--По ТЗ логотип не является пунктом меню.Нужно размечать отдельным элементом-->
+				<ul class="site-navigation">
+					<li><a class="info">Информация</a></li><!--По ТЗ не является ссылкой на главную страницу-->
+					<li><a href="index.html">Фото и видео</a></li>
+					<li><a href="index.html">Карта штата</a></li>
+					<li><a href="index.html">Гостиницы</a></li>
+				</ul>
+			</nav>
+		</header>
 		
 	<main class="hotels-content">
 	<!--<form></form>-->
@@ -74,21 +72,21 @@
 			</ul>
 		</section>
 	</main>
-	<footer class="main-footer">
-		<div class="main-footer-column">
-			<div class="main-footer-column-visit">
-				<p class="hashtag">#visitsedona</p>
+		<footer class="main-footer">
+			<div class="main-footer-column">
+				<div class="main-footer-column-visit">
+					<a href="#">#visitsedona</a>
+				</div>
+				<div class="main-footer-column-socials">
+					<a href="#" class="social-twitter"></a></li>
+					<a href="#" class="social-facebook"></a></li>
+					<a href="#" class="social-youtube"></a></li>
+				</div>
+				<div class="main-footer-column-copyright">
+					<span>Website by</span>
+					<a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">Лого htmlacademy</a>
+				</div>
 			</div>
-			<div class="main-footer-column-socials">
-				<a href="#" class="social-twitter"></a>
-				<a href="#" class="social-facebook"></a>
-				<a href="#" class="social-youtube"></a>
-			</div>
-			<div class="main-footer-column-copyright">
-				<p class="copyright-text">Website by</p>
-				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy" width="150" height="100"></a>
-			</div>
-		</div>
-	</footer>
-  </body>
+		</footer>
+	</body>
 </html>
