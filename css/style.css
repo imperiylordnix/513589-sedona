@@ -202,7 +202,6 @@ body {
 	color: #81b3d2;
 	cursor: pointer;
 }
-
 .info:active {
 	color: #000;
 	opacity: .3;
@@ -219,13 +218,17 @@ body {
 }
 .main-footer-column-visit,
 .main-footer-column-socials,
-.main-footer-column-copyright {
+.main-footer-column-copyright,
+.col {
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
 	width: 33.33%;
 	font-size: 14px;
 }
+.col-two {
+    width: 66.67%;
+	}
 
 /**Главное содержимое index**/
 
@@ -340,6 +343,7 @@ body {
 }
 
 /**Подвал**/
+
 .map {
 	position: relative;
 	background: no-repeat 50% 100%;
@@ -348,7 +352,7 @@ body {
     padding: 30px 0;
     text-align: center;
     background: rgba(254,254,254,.9);
-  }
+}
 .main-footer-column-visit {
 	padding: 17px 0;
 }
@@ -428,4 +432,107 @@ body {
 }
 .logo-htmlacademy:active {
 	background-position: 50% 0;
+}
+
+/**Promo**/
+
+.promo {
+	position: relative;
+	height: 510px;
+	background: #3d4c57 url(../img/index.jpg) no-repeat 50% 30%;
+	background-size: cover;
+}
+
+/**mask**/
+
+.promo::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 57px;
+    background: transparent url('../img/mask.png') no-repeat 0 50%;
+    background-size: 100% 57px;
+}
+.slogan-welcome,
+.slogan-sedona,
+.slogan-site {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    width: 458px;
+    height: 90px;
+    margin-left: -229px;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    background: transparent url('../img/promo-poster-text.png') no-repeat;
+}
+.slogan-welcome {
+    top: 75px;
+    background-position: 0 0;
+}
+.slogan-sedona {
+    top: 207px;
+    background-position: 0 -132px;
+}
+.slogan-site {
+    top: 337px;
+    background-position: 0 -262px;
+}
+/**intro**/
+
+.intro {
+	padding: 31px 0;
+	line-height: 26px;
+	text-align: center;
+}
+.features-title {
+    width: 450px;
+    margin: 28px auto;
+    font-size: 21px;
+    color: #000;
+}
+.intro .features-text {
+    margin: 20px 0;
+}
+
+/**title**/
+
+.features-item {
+	min-height: 256px;
+    background: #eee;
+}
+.features-item .feature-description {
+    padding: 0 4%;
+    padding-top: 35px;
+}
+.feature-description {
+    text-align: center;
+}
+.item-object-title {
+	margin: 10px auto;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	  }
+.feature-description p {
+	margin: 22px auto;
+}
+.features-item {
+	color: #fff;
+	background: #81b3d2;
+}
+.left .feature-description {
+    padding: 0 6%;
+    padding-top: 35px;
+}
+.right .feature-description {
+    padding: 0 7%;
+    padding-top: 35px;
+}
+.features-item .item-object-title {
+    margin-top: 17px;
 }

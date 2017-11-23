@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-		<head>
-			<meta charset="utf-8">
-			<title>HTML Academy: Седона</title>
-			<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-		</head>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
 	<body>
 		<header class="main-header">
 			<nav class="main-navigation">
@@ -25,13 +26,19 @@
 				<span class="slogan-site">Because the Grand Canyon sucks</span>
 			</section>
 			<section class="features">
+				<section class="intro">
 					<h1 class="features-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
 					<p class="features-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-				<div class="features-item">						
-					<h2 class="item-object-title">Настоящий городок</h2>
-					<span class="item-object-number">№1</span>
-					<p class="item-object-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>						
-					<img class="features-img" src="./img/feature-1.jpg" alt="Фото дома на улице" width="150" height="100">
+				</section>
+				<div class="features-item left">
+					<div class="feature-description col">
+						<h2 class="item-object-title">Настоящий городок</h2>
+						<span class="item-object-number">№1</span>
+						<p class="item-object-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+					</div>
+					<div class="poster col col-two">
+						<img class="features-img" src="./img/feature-1.jpg" alt="Фото дома на улице" width="512" height="256">
+					</div>
 				</div>
 				<section class="features-services">
 					<ul class="services-list">
@@ -52,11 +59,15 @@
 						</li>
 					</ul>
 				</section>
-				<div class="features-item">	
-					<img class="features-img" src="./img/feature-2.jpg" alt="Фото моста Дьявола" width="150" height="100">
-					<h2 class="item-object-title">Там есть мост Дьявола</h2>
-					<span class="item-object-number">№2</span>
-					<p class="item-object-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>					
+				<div class="features-item right">	
+					<div class="poster col col-two">
+						<img class="features-img" src="./img/feature-2.jpg" alt="Фото моста Дьявола" width="512" height="256">
+					</div>
+					<div class="feature-description col">
+						<h2 class="item-object-title">Там есть мост Дьявола</h2>
+						<span class="item-object-number">№2</span>
+						<p class="item-object-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</div>
 				</div>
 				<section class="features-services">
 					<ul class="features-services-plus">
@@ -83,7 +94,7 @@
 					<h2 class="public-title">Заинтересовались?</h2>
 					<p class="public-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					<a href="#" class="public-button">Поиск гостиницы в Седоне</a>
-	
+					
 					<form class="form" action="#">
 						<fieldset class="form-rows">
 							<label class="form-label" for="date-in">Дата заезда:</label>
