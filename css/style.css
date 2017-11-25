@@ -4,7 +4,8 @@
 .description-hotels-button,
 .description-hotels-button-other,
 .btn-social,
-.public-button {
+.public-button,
+.button-solid{
 	display: inline-block;
 	vertical-align: top;
 	padding: 5px 17px;
@@ -20,6 +21,13 @@
 	color: #fff;
 	background: #81b3d2;
 	cursor: pointer;
+}
+.button-solid:hover {
+	background: #669ec0;
+}
+.button-solid:active {
+	color: rgba(255,255,255,.3);
+	background: #5496bd;
 }
 .button-clear:hover {
 	background: #669ec0;
@@ -42,12 +50,14 @@
 	color: rgba(255,255,255,.3);
 	background: #5496bd;
 }
+.public-button {
+  background: #766357;
+}
 .public-button:hover {
-	background: #669ec0;
+	background: #604e43;
 }
 .public-button:active {
-	color: rgba(255,255,255,.3);
-	background: #5496bd;
+	background: #503e33;
 }
 .description-hotels-button-other {
 	background: #766357;
@@ -249,8 +259,7 @@ body {
     text-align: center;
 }
 .features-title {
-	font-size: 21px; 
-    color: #000; 
+	font-size: 21px;  
 }
 .item-object-title {
 	font-size: 21px; 
@@ -489,7 +498,7 @@ body {
 	line-height: 26px;
 	text-align: center;
 }
-.features-title {
+.intro-title {
     width: 450px;
     margin: 28px auto;
     font-size: 21px;
@@ -499,11 +508,16 @@ body {
     margin: 20px 0;
 }
 
-/**title**/
+/**features**/
 
-.features-item {
+.features-item,
+.features-services {
 	min-height: 256px;
     background: #eee;
+}
+.features-services .feature-description {
+    padding: 0 4%;
+    padding-top: 35px;
 }
 .features-item .feature-description {
     padding: 0 4%;
@@ -512,12 +526,12 @@ body {
 .feature-description {
     text-align: center;
 }
-.item-object-title {
+.features-title {
 	margin: 10px auto;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	  }
+}
 .feature-description p {
 	margin: 22px auto;
 }
@@ -533,6 +547,193 @@ body {
     padding: 0 7%;
     padding-top: 35px;
 }
-.features-item .item-object-title {
+.features-item .features-title {
     margin-top: 17px;
+}
+.poster {
+	position: relative;
+	height: 256px;
+	overflow: hidden;
+	background: rgba(0,0,0,.1);
+}
+.poster img {
+	position: absolute;
+	top: 50%;
+	max-width: 100%;
+	height: auto;
+	transform: translateY(-50%);
+}
+
+/**features-services**/
+
+.services-list {
+	min-height: 330px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.services-item {
+	padding: 0 6%;
+    padding-top: 35px;
+    text-align: center;
+}
+.services-item-center {
+    padding: 0 4%;
+    padding-top: 35px;
+}
+.services-item-title {
+	position: relative;
+	margin: 20px auto;
+	padding-top: 103px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+.services-item-title::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 76px;
+	height: 76px;
+	margin-left: -38px;
+	background: transparent url('../img/icons.png') no-repeat;
+}
+.services-item-title-food::before {
+	background-position: 0 0;
+}
+.services-item-title-gift::before {
+	background-position: 0 -152px;
+}
+.services-item-title-house::before {
+	background-position: 0 -304px;
+}
+.services-item p {
+	margin: 22px auto;
+}
+
+/**order**/
+
+.order {
+	position: relative;
+	z-index: 1;
+	width: 568px;
+	margin: 0 auto;
+	text-align: center;
+}
+.order h2 {
+	margin-top: 53px;
+	margin-bottom: 29px;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: bold;
+}
+.order p {
+	margin: 24px 50px;
+	line-height: 24px;
+}
+.order .public-button {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-top: 45px;
+    padding: 30px;
+    font-size: 21px;
+    line-height: 26px;
+}
+.popup {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
+}
+.form {
+    margin: 55px;
+}
+.form-rows {
+	position: relative;
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+	border: none;
+	font-size: 0;
+	font-weight: bold;
+	text-align: left;
+}
+.form .form-label {
+	display: inline-block;
+	vertical-align: top;
+	width: 115px;
+	font-size: 14px;
+	line-height: 41px;
+}
+.form .form-input {
+	display: inline-block;
+	vertical-align: top;
+}
+.form-input-date {
+	width: 343px;
+	padding-right: 38px;
+}
+.icon-calendar {
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #a9a9a9;
+}
+.icon-calendar::before {
+	width: 38px;
+	margin: 0;
+	font-size: 21px;
+	line-height: 38px;
+	text-align: center;
+}
+.form-input-date:hover + .icon-calendar {
+    color: #000;
+}
+.form-input-date:focus + .icon-calendar {
+    color: #81b3d2;
+}
+.counter {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 0px;
+}
+.form-input-counter {
+	width: 38px;
+	padding: 8px 0;
+	text-align: center;
+}
+.counter button {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	border: none;
+	outline: none;
+	color: #a9a9a9;
+	background: #f2f2f2;
+}
+.counter button::before {
+	display: block;
+	width: 38px;
+	margin: 0;
+	font-size: 14px;
+	line-height: 38px;
+	text-align: center;
+}
+.counter .form-label {
+	width: 65px;
+	margin-left: 50px;
+}
+.form .button-solid {
+	width: 100%;
+	margin-top: 24px;
+	padding: 16px;
+	font-size: 21px;
+	line-height: 26px;
 }
