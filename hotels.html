@@ -24,7 +24,7 @@
 			<form class="filters-rows" action="#">
 				<fieldset class="options">
 					<h2 class="filter-title">Инфраструктура:</h2>
-					<ul>
+					<ul class="filter-options">
 						<li>
 							<input class="form-checkbox" type="checkbox" name="infrastructure" value="val-1" checked id="check-i-1">
 							<label class="form-label" for="check-i-1">Бассейн</label>
@@ -41,7 +41,7 @@
 				</fieldset>
 				<fieldset class="options">
 					<h2 class="filter-title">Тип жилья:</h2>
-					<ul>
+					<ul class="filter-options">
 						<li>
 							<input class="form-checkbox" type="checkbox" name="digs" value="val-1" checked id="check-d-1">
 							<label class="form-label" for="check-d-1">Гостиница</label>
@@ -56,34 +56,43 @@
 						</li>
 					</ul>
 				</fieldset>
-				<h2 class="filter-title">Стоимость в сутки (Р):</h2>
-				<div class="cost-group">
-					<label>от <input class="cost-input-min" type="text" name="cost-from" value="0"></label>
-					<label>до <input class="cost-input-max" type="text" name="cost-to" value="3000"></label>
+				<div class="filter-cost col">
+					<h2 class="filter-title">Стоимость в сутки (Р):</h2>
+					<div class="cost-control">
+						<div class="cost-group">
+							<label>от <input class="cost-input cost-input-min" type="text" name="cost-from" value="0"></label>
+							<label>до <input class="cost-input cost-input-max" type="text" name="cost-to" value="3000"></label>
+						</div>
+						<div class="range">
+							<div class="scale">
+								<button class="scale-slider scale-slider-min" type="button" tabindex="0"></button>
+								<button class="scale-slider scale-slider-max" type="button" tabindex="0"></button>
+							</div>
+						</div>
+					</div>
+					<button class="button-clear" type="submit">Показать</button>
 				</div>
-				<div class="scale">
-					<button class="scale-slider" type="button" tabindex="0"></button>
-					<button class="scale-slider" type="button" tabindex="0"></button>
-				</div>
-				<button class="button-clear" type="submit">Показать</button>
 			</form>
 			
 			<section class="filter">
 				<h1 class="answer-title">Найдено: 3</h1>
-				<ul class="sorting-list">
-					<li><a href="#" class="sorting-item">По цене</a></li>
-					<li><a href="#" class="sorting-item">По типу</a></li>
-					<li><a href="#" class="sorting-item">По рейтингу</a></li>
-				</ul>
-				<ul class="sorting-list">
-					<li><a class="sorting-item-up">Вверх</a></li>
-					<li><a class="sorting-item-down">Вниз</a></li>
-				</ul>
+				<div class="sort-order sorting-list">
+					<li><a class="icon sorting-item-up">Вверх</a></li>
+					<li><a class="icon sorting-item-down">Вниз</a></li>
+				</div>
+				<div class="sort-type">
+					<div class="sort-label">Сортировка:</div>
+					<ul>
+						<li><a href="#" class="sorting-item">По цене</a></li>
+						<li><a href="#" class="sorting-item">По типу</a></li>
+						<li><a href="#" class="sorting-item">По рейтингу</a></li>
+					</ul>
+				</div>
 			</section>
 			<section class="catalog">
 				<ul class="hotels-list">
 					<li class="hotel-item">
-						<div class="hotels-img"><img class="hotels-img" src="./img/hotel-amara.jpg" alt="изображение Amara Resort &amp; Spa" width="138" height="70"></div>
+						<div class="hotels-img answer-title"><img class="hotels-img" src="./img/hotel-amara.jpg" alt="изображение Amara Resort &amp; Spa" width="138" height="70"></div>
 						<h2 class="description-hotels-title">Amara Resort &amp; Spa</h2>
 						<p class="description-hotels-type">Гостиница</p>
 						<p class="description-hotels-price">от 3500 р.</p>
@@ -93,7 +102,7 @@
 						<p class="description-hotels-rating-num">Рейтинг: 8,5</p>
 					</li>
 					<li class="hotel-item">
-						<div class="hotels-img"><img class="hotels-img" src="./img/hotel-desert.jpg" alt="изображение Desert Quail Inn" width="138" height="70"></div>
+						<div class="hotels-img answer-title"><img class="hotels-img" src="./img/hotel-desert.jpg" alt="изображение Desert Quail Inn" width="138" height="70"></div>
 						<h2 class="description-hotels-title">Desert Quail Inn</h2>
 						<p class="description-hotels-type">Мотель</p>
 						<p class="description-hotels-price">от 3000 р.</p>
@@ -103,7 +112,7 @@
 						<p class="description-hotels-rating-num">Рейтинг: 8,9</p>
 					</li>
 					<li class="hotel-item">
-						<div class="hotels-img"><img class="hotels-img" src="./img/hotel-villas.jpg" alt="изображение Villas at Poco Diablo" width="138" height="70"></div>
+						<div class="hotels-img answer-title"><img class="hotels-img" src="./img/hotel-villas.jpg" alt="изображение Villas at Poco Diablo" width="138" height="70"></div>
 						<h2 class="description-hotels-title">Villas at Poco Diablo</h2>
 						<p class="description-hotels-type">Апартаменты</p>
 						<p class="description-hotels-price">от 2000 р.</p>
